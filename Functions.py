@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Saturday April 20 2024
-Here we export the RiT functions for ResNet18 model
+Here we implement the RiT functions for ResNet18 model
 @author: dinesh
 """
 
