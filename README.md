@@ -6,11 +6,14 @@ The repository contains the implementation of RiT and its application with ResNe
 
 **Description of contents:**
 Functions.py - contains the implementation of the RiT module as described in the above papers.
+
 Model_RiT.py - contains the implementation of the RiT with ResNet18 in the basic configuration (where RiT layer is placed at end of the convolutional pipeline)
+
 Dataset.py - contains the implementation of the dataloader functions for Imagehoof dataset. Further details, download links for the dataset are available from the file.
+
 main.py - has the basic train/test code for ResNet18+RiT 
 
-Requirements:
+**Requirements:**
 1. Imagehoof dataset - https://github.com/fastai/imagenette
 2. pytorch (min version) 3.6.8
 3. Cuda/GPU support - preferable
