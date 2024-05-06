@@ -5,6 +5,7 @@ The repository contains the implementation of RiT and its application with ResNe
 2. Kumar, D., Sharma, D., & Goecke, R. (2020, February). Feature map augmentation to improve rotation invariance in convolutional neural networks. In International Conference on Advanced Concepts for Intelligent Vision Systems (pp. 348-359). Cham: Springer International Publishing.
 
 **Description of contents:**
+
 Functions.py - contains the implementation of the RiT module as described in the above papers.
 
 Model_RiT.py - contains the implementation of the RiT with ResNet18 in the basic configuration (where RiT layer is placed at end of the convolutional pipeline)
