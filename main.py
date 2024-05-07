@@ -34,9 +34,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(device)
 
 #%%
-def train(net, criterion, optimizer, trainloader, train_cache):
-    train_loss_hist=[]
-    train_acc_hist =[]       
+def train(net, criterion, optimizer, trainloader, train_cache):  
     start = time.time()
     
     (EPOCHS,momnt,lr,w_decay, loss_fn, learning_fn) =train_cache
@@ -73,22 +71,15 @@ def train(net, criterion, optimizer, trainloader, train_cache):
 
         epoch_loss = running_loss/(len(trainloader.dataset)/trainloader.batch_size)
         epoch_acc = tot_acc/(len(trainloader.dataset)/trainloader.batch_size)
-        train_loss_hist.append(epoch_loss)    
-        train_acc_hist.append(epoch_acc)
-                    
+                 
         print ('\n')
-        #----------------------------------------------------------------------       
-        #save train history after every epoch
         tot_time = time.time() - start
              
     tot_time = time.time() - start
     print ('Training completed in (seconds) %.3f ' %(tot_time))
     
     return {'loss': epoch_loss,\
-            'acc': epoch_acc,\
-            'train_time': tot_time, \
-            'loss_hist':train_loss_hist, \
-            'acc_hist':train_acc_hist}
+            'acc': epoch_acc}
 
 #%%
 def test(net, testloader):  
