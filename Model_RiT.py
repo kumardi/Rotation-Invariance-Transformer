@@ -12,6 +12,10 @@ Kumar, D., Sharma, D., & Goecke, R. (2020, February). Feature map augmentation t
 invariance in convolutional neural networks. In International Conference on Advanced Concepts for 
 Intelligent Vision Systems (pp. 348-359). Cham: Springer International Publishing.
 
+Reference codes from:
+1. https://pytorch.org/vision/0.8/_modules/torchvision/models/resnet.html
+2. Refer to torchvision manual
+
 """
 from Functions import Function_RiT, Function_Flatten
 from torch import Tensor
